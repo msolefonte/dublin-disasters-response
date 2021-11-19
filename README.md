@@ -1,19 +1,24 @@
+[![NodeJS CI Actions Status](https://img.shields.io/github/workflow/status/msolefonte/dublin-disasters-response/nodejs-ci)](https://github.com/msolefonte/dublin-disasters-response/actions)
+[![Codecov](https://codecov.io/gh/msolefonte/dublin-disasters-response/branch/main/graph/badge.svg?token=178AK2GXQL)](https://codecov.io/gh/msolefonte/dublin-disasters-response)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8e48291929dd5190e908/maintainability)](https://codeclimate.com/github/msolefonte/dublin-disasters-response/maintainability)
+[![License](https://img.shields.io/github/license/msolefonte/dublin-disasters-response)](https://github.com/msolefonte/dublin-disasters-response/blob/master/LICENSE)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/msolefonte/dublin-disasters-response/blob/master/CONTRIBUTING.md)
+
 # Response to Smart City Disasters
 
 The goal of this project is to provide real-time wayfinding for travellers that improves the reliability of the mobility experience across all transportation modes. It will build intelligence at the edges of the network (i.e., decentralised), while providing real-time decision-making and decision support to very large numbers of travellers, across a wide range of transportation modes (including pedestrian, bike, car, bus, tram, train and taxi) tailored to their individual priorities (pollution avoidance, emissions reduction, speed, reliability, comfort etc.). A single trip may involve multiple modes of transport, which may be modified en-route, given changes in the environment, e.g., congestion, noise pollution, crowded and so on.
- 
+
 Some of the main challenges include identifying when a user’s interests are likely to conflict with sustainability goals, how a user can be incentivised to choose a more sustainable travel plan, and when to trigger an adaptation of the travel plan in line with users’ preferences
- 
- 
+
+
 Each trip must:
- 
+
 * **Be multi-modal:** The options presented to the traveller should include three or more modes, and the demonstration of the overall system should illustrate multiple different routes, with all mode options (listed above) used at least once. Each route should include more than one public transport mode option. Real-time data should be used, when available. Where real-time data is not available, options should be simulated. This means that a sample trip should be around 20Km across the city, not following a city’s buses pattern.           
 * **Be adaptive:** The system should adapt a route AFTER the traveller has started. This is likely to require simulation of some event that has a negative impact on the previously identified route (e.g., unexpected closure of a road, or tree on the Luas line), requiring the traveller to change modes, in real time.
- 
+
 The system must:
- 
+
 * **Be highly available:** The system must be fault tolerant. The system should execute even when off-line. The system must react favourably even if data from heterogeneous sources are not available. When offline, the system should find relevant information from surrounding available sources about all required modes of transport;
-Provide low latency for mobile users. 
+Provide low latency for mobile users.
 * **Be secure:** The system should be secure from attack.
-* **Be flexible:** The system should allow flexible addition and management of heterogeneous data sources. This means that hard coded APIs calls should be avoided in the code. 
- 
+* **Be flexible:** The system should allow flexible addition and management of heterogeneous data sources. This means that hard coded APIs calls should be avoided in the code.
